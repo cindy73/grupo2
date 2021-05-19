@@ -16,21 +16,12 @@ $(document).ready(function() {
    		 $('[data-eli]').click(function(){
          $(this).parents("tr").remove();
         
-       
+        Swal("Correcto", "Datos Eliminados", "success")
          
     })
 		
 
-
-
-
         limpiarFormulario();
-		Swal.fire({
-		  
-
-
-		 
-
 
 	})
 
