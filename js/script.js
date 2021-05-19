@@ -11,24 +11,22 @@ $(document).ready(function() {
 		var c= $('#cedula').val();
 		idP++;
 		$('#tabla').append("<tr align='center' href='#'><td>"+a+"</td><td>"+b+"</td><td>"+c+"</td><td><a href='#' data-eli="+idP+">Eliminar</a></td></tr>");
-		Swal("Correcto", "Datos Eliminados", "success")
+		swal("Correcto", "Datos guardados", "success");
 
 
 		$('[data-eli]').off();
    		 $('[data-eli]').click(function(){
          $(this).parents("tr").remove();
-        
-        
-         
-    
-		
+        swal("Correcto", "Datos Eliminados", "success");
 
-        limpiarFormulario();
+        
+       
 
 	})
 
 
-
+ limpiarFormulario();
+	})
 
 	
 });
