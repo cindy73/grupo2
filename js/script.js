@@ -12,24 +12,24 @@ $(document).ready(function() {
 		idP++;
 		$('#tabla').append("<tr align='center' href='#'><td>"+a+"</td><td>"+b+"</td><td>"+c+"</td><td><a href='#' data-eli="+idP+">Eliminar</a></td></tr>");
 		
-        limpiarFormulario();
-		Swal.fire({
-		  position: 'center',
-		  icon: 'success',
-		  title: 'Datos Guardados Correctamente',
-		  showConfirmButton: true,
-		  timer: 1500
-		})
-
-
-		 $('[data-eli]').off();
+		$('[data-eli]').off();
    		 $('[data-eli]').click(function(){
          $(this).parents("tr").remove();
         
+       
          
     })
 		
 
+
+
+
+        limpiarFormulario();
+		Swal.fire({
+		  
+
+
+		 
 
 
 	})
